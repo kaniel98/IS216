@@ -1,61 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Challenge 3 - Friends Fan Page</title>
+    <head>
+        <meta charset="utf-8" />
+        <title>Challenge 3 - Friends Fan Page</title>
 
-    <!-- How do we refer to Bootstrap CDN? 
+        <!-- How do we refer to Bootstrap CDN? 
         Go to Bootstrap 4 website: https://getbootstrap.com/
         And go to Get Started
         Get "Starter template" code!
     -->
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</head>
-<body>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container bg-dark">
+                <a href="#intro" class="navbar-brand">
+                    <span><img src="./images/friends.jpg" alt="friends logo" style="width: 40%" /></span>
+                </a>
 
+                <!-- Toggle button for mobile navigation -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<!-- Navigation -->
-Home
-Videos
-Photos
-Contact
+                <!-- Nav bar links  -->
+                <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#intro" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#videos" class="nav-link">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#photos" class="nav-link">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
+        <!-- Introduction -->
+        <section id="introduction" style="margin-top: 100px">
+            <div class="container">
+                <row class="justify-content-center align-items-center">
+                    <h1 class="display-3 text-center my-3">Introduction</h1>
+                    <p>
+                        Friends is an American television sitcom, created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons. With an
+                        ensemble cast starring Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer, the show revolves around six friends in their 20s and 30s
+                        who live in Manhattan, New York City. The series was produced by Bright/Kauffman/Crane Productions, in association with Warner Bros. Television. The original executive
+                        producers were Kevin S. Bright, Kauffman, and Crane.
+                    </p>
+                </row>
+            </div>
+        </section>
 
+        <!-- Meet the Cast, 6 cards -->
+        <section id="cast">
+            <div class="container">
+                <div class="row my-5 align-items-center justify-content-center g-0">
+                    <h1 class="display-3 text-center my-3">Meet the Cast</h1>
 
-<!-- Introduction -->
-Introduction
-<p>Friends is an American television sitcom, created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May 6, 2004, lasting ten seasons. With an ensemble cast starring Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer, the show revolves around six friends in their 20s and 30s who live in Manhattan, New York City. The series was produced by Bright/Kauffman/Crane Productions, in association with Warner Bros. Television. The original executive producers were Kevin S. Bright, Kauffman, and Crane.</p>
+                    <!-- First three -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem">
+                            <img src="./images/rachel.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Rachel</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corporis iusto ipsam, laboriosam libero suscipit odit.</p>
+                                <a href="#" class="btn btn-primary">More info</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem">
+                            <img src="./images/monica.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Monica</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corporis iusto ipsam, laboriosam libero suscipit odit.</p>
+                                <a href="#" class="btn btn-primary">More info</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem">
+                            <img src="./images/phoebe.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Phoebe</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corporis iusto ipsam, laboriosam libero suscipit odit.</p>
+                                <a href="#" class="btn btn-primary">More info</a>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Meet the Cast, 6 cards -->
-Rachel
-<img src="images/rachel.jpg">
-Monica
-<img src="images/monica.jpg">
-Phoebe
-<img src="images/phoebe.jpg">
-Chandler
-<img src="images/chandler.jpg">
-Joey
-<img src="images/joey.jpg">
-Ross
-<img src="images/ross.jpg">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem">
+                            <img src="./images/chandler.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Chandler</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corporis iusto ipsam, laboriosam libero suscipit odit.</p>
+                                <a href="#" class="btn btn-primary">More info</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem">
+                            <img src="./images/joey.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Joey</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corporis iusto ipsam, laboriosam libero suscipit odit.</p>
+                                <a href="#" class="btn btn-primary">More info</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card mx-auto" style="width: 18rem">
+                            <img src="./images/ross.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Ross</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corporis iusto ipsam, laboriosam libero suscipit odit.</p>
+                                <a href="#" class="btn btn-primary">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- Form -->
-Write to Friends Cast
-Full Name, Country, Username
-<br>
-Who is your most favorite member? Rachel Monica Phoebe Chandler Joey Ross
-<br>
-Submit button 'Send Letter to the Cast'
+        <!-- Form -->
+        <section id="form" class="container-fluid bg-secondary">
+            <div class="container bg-secondary p-5 text-white">
+                <div class="text-center">
+                    <h2 class="display-4">Write to the Friends Cast</h2>
+                </div>
 
+                <form action="" class="row">
+                    <!-- Full name -->
+                    <div class="col-6">
+                        <label for="name" class="form-label">Full name:</label>
+                        <div class="input-grou mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="e.g. John Doe" />
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="country" class="form-label">Country:</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="country" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="username" class="form-label">Username:</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="username" />
+                        </div>
+                    </div>
 
+                    <div class="col-12">
+                        <label for="favourite_member" class="form-label">Who is your favourite member?</label>
+                        <div class="input-group mb-3">
+                            <select name="favourite_member" id="favourite_member" class="form-select">
+                                
+                                <option value="rachel">Rachel</option>
+                                <option value="monica">Monica</option>
+                                <option value="phoebe">Phoebe</option>
+                                <option value="chandler">Chandler</option>
+                                <option value="joey">Joey</option>
+                                <option value="ross">Ross</option>
+                            </select>
+                        </div>
+                    </div>
 
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-danger">
+                            <h4>Send Letter to the Cast</h4>  
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
-
-
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
