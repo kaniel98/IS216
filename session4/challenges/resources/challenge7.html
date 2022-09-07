@@ -35,8 +35,13 @@
         // HINT: You need to APPEND additional HTML to table_data
         
         // WRITE YOUR CODE HERE
-
-
+        for (let friend of friends){
+            table_data += "<tr>";
+            for (let item of friend){
+                table_data += "<td>" + item + "</td>";
+            }
+            table_data += "</tr>";
+        }
 
         // Once table_data is completed
         // It will be used by JavaScript code below (inside body)
